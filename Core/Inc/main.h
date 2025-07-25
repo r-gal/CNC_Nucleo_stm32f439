@@ -60,7 +60,7 @@ void Error_Handler(void);
 #define AXE_X_TIMER htim1
 #define AXE_Y_TIMER htim8
 #define AXE_Z_TIMER htim3
-#define AXE_A_TIMER htim24
+#define AXE_A_TIMER htim5
 #define MASTER_TIMER htim4
 #define configRUNTIME_TIMER htim7
 #define SPINDLE_TIMER htim10
@@ -69,6 +69,7 @@ void Error_Handler(void);
 #define SPEED_PERIOD 10
 #define MASTER_FREQ 84000000
 #define AXE_B_TIMER htim12
+#define HIWDG_ hiwdg
 #define USER_Btn_Pin GPIO_PIN_13
 #define USER_Btn_GPIO_Port GPIOC
 #define TEST7_Pin GPIO_PIN_3
@@ -103,12 +104,12 @@ void Error_Handler(void);
 #define LD1_GPIO_Port GPIOB
 #define EMERGENCY_Pin GPIO_PIN_12
 #define EMERGENCY_GPIO_Port GPIOF
+#define limX_Pin GPIO_PIN_14
+#define limX_GPIO_Port GPIOF
 #define AXE_X_PULSE_Pin GPIO_PIN_9
 #define AXE_X_PULSE_GPIO_Port GPIOE
 #define dirX_Pin GPIO_PIN_11
 #define dirX_GPIO_Port GPIOE
-#define limX_Pin GPIO_PIN_14
-#define limX_GPIO_Port GPIOE
 #define dirA_Pin GPIO_PIN_15
 #define dirA_GPIO_Port GPIOE
 #define limA_Pin GPIO_PIN_10

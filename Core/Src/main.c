@@ -19,9 +19,11 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "eth.h"
+#include "iwdg.h"
 #include "rng.h"
 #include "rtc.h"
 #include "tim.h"
+#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -102,6 +104,9 @@ int main(void)
   MX_TIM11_Init();
   MX_RTC_Init();
   MX_TIM12_Init();
+  MX_TIM7_Init();
+  MX_IWDG_Init();
+  MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
   ApplMain();
   /* USER CODE END 2 */

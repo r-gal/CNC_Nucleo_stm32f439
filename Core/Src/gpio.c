@@ -107,11 +107,11 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : EMERGENCY_Pin */
-  GPIO_InitStruct.Pin = EMERGENCY_Pin;
+  /*Configure GPIO pins : EMERGENCY_Pin limX_Pin */
+  GPIO_InitStruct.Pin = EMERGENCY_Pin|limX_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
-  HAL_GPIO_Init(EMERGENCY_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOF, &GPIO_InitStruct);
 
   /*Configure GPIO pins : dirX_Pin dirA_Pin */
   GPIO_InitStruct.Pin = dirX_Pin|dirA_Pin;
@@ -119,12 +119,6 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
   HAL_GPIO_Init(GPIOE, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : limX_Pin */
-  GPIO_InitStruct.Pin = limX_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
-  HAL_GPIO_Init(limX_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : limA_Pin limY_Pin PROBE_Pin */
   GPIO_InitStruct.Pin = limA_Pin|limY_Pin|PROBE_Pin;
