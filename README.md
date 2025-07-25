@@ -1,6 +1,10 @@
-## CNC driver source prepared for platform NUCLEO-32F439ZI. Project prepared in STM32CubeIDE.
+# Overview
 
-Simplest way to use it:
+This repository contain CNC driver source prepared for platform NUCLEO-32F439ZI. Project prepared in STM32CubeIDE.
+Orginal version for dedicated PCB is stored in https://github.com/r-gal/CNC repository.
+GUI application is stored in https://github.com/r-gal/CNC_app repository.
+
+## Simplest way to use it:
 
 1. Clone repository
 
@@ -42,3 +46,4 @@ PB4 - PROBE
 PF12 - ESTOP
 
 ```
+All inputs are internaly pulled up.
